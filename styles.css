@@ -1,0 +1,60 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: url('./flor.jpg'); /* Adiciona a imagem de fundo */
+    background-size: cover; /* Faz com que a imagem cubra todo o contêiner */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#display {
+    width: calc(100% - 10px);
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: white;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.grey-btn {
+    background-color: #777;
+    color: white;
+}
+
+.orange-btn {
+    background-color: #ff8c00;
+    color: white;
+}
+
+.equals-btn {
+    background-color: #ff5733;
+    color: white;
+}
+
+.zero-btn {
+    grid-column: span 2;
+}
